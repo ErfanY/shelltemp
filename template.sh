@@ -65,9 +65,9 @@ function parseArgs() {
         	exit
         	;;
           *)
-			echo "Invalid argument. Use --help to see usage."
-			exit
-			;;
+        	echo "Invalid argument. Use --help to see usage."
+        	exit
+        	;;
     	esac
     shift
 	done
