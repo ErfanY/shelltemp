@@ -1,6 +1,7 @@
 #!/bin/bash
 # REMOVE this is a template shell script, use it wisely
-
+# Set the timer
+STARTTIME=$SECONDS
 # Basic info
 # Name
 MYNAME=${0##*/} # Full name i.e. template.sh
@@ -75,3 +76,7 @@ function parseArgs() {
 
 parseArgs $*
 # Happy scripting
+
+# Elapsed time
+ELAPSEDTIME=$(($SECONDS - $STARTTIME))
+echo "Script finished in $((ELAPSEDTIME/60)) minutes and $((ELPASEDTIME%60)) seconds."
