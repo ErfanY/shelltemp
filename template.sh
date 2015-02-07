@@ -70,7 +70,7 @@ function parseArgs() {
         	;;
     	esac
     shift
-	done
+    done
 }
 
 parseArgs $*
